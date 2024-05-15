@@ -14,7 +14,12 @@ export default function VisitingCard(props) {
       <Navbar /> {/* Rendering the Navbar component */}
       <div className="m-10 flex justify-center gap-5">
         {/* Container for the card, using Flexbox */}
-        <div className="card backgroundimg flex items-center justify-center rounded-xl text-white shadow-2xl">
+        <div
+          className="card  flex items-center justify-center rounded-xl text-white shadow-2xl"
+          style={{
+            backgroundImage: `url("Images/backgroundillustration.jpeg")`,
+          }}
+        >
           {/* Front of the visiting card */}
           <div className="text-md font-serif font-bold">
             {props.company} {/* Defaulting company name */}
@@ -22,7 +27,12 @@ export default function VisitingCard(props) {
         </div>
 
         {/* Back of the visiting card */}
-        <div className="card backgroundimg rounded-xl p-3  text-white shadow-2xl">
+        <div
+          className="card  rounded-xl p-3  text-white shadow-2xl"
+          style={{
+            backgroundImage: `url("Images/backgroundillustration.jpeg")`,
+          }}
+        >
           <div className="text-3xl font-semibold">{`${props.name} ${props.lastname}`}</div>
           {/* Displaying name and last name */}
 
