@@ -1,0 +1,20 @@
+.LandingColor {
+  background: rgb(0, 36, 107);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 36, 107, 1) 0%,
+    rgba(0, 36, 107, 1) 0%,
+    rgba(0, 36, 107, 1) 28%,
+    rgba(202, 220, 252, 1) 100%
+  );
+}
+@media (min-width: 768px) {
+  .bg-gray-50 {
+    background-color: transparent !important;
+  }
+}
+@media (min-width: 768px) {
+  .link{
+    color: black !important;
+  }
+}
